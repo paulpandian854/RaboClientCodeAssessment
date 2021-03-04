@@ -1,0 +1,14 @@
+<table class="table table-md table-striped">
+  <thead>
+    <tr>
+      <th>Selector to remove Favorites</th>
+      <th>List of Selected Jokes</th>
+    </tr>
+  </thead>
+  <tbody >
+    <tr *ngFor="let j of jokesSelected">
+      <td><input type="checkbox" (click)="removeFromFavorites(j)"></td>
+      <td>{{j}}</td>
+    </tr>
+  </tbody>
+</table>

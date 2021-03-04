@@ -1,0 +1,15 @@
+<table class="table table-sm table-striped">
+    <thead>
+      <tr>
+        <th>Selector for Favorites</th>
+        <th>List of Jokes</th>
+      </tr>
+    </thead>
+    <tbody >
+      <tr *ngFor="let jok of jokes">
+        <td><input type="checkbox" (click)="checkBoxClick(jok.joke)
+          "></td>
+        <td>{{jok.joke}}</td>
+      </tr>
+    </tbody>
+  </table>
